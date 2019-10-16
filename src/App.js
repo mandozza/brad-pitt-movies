@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { UserContext } from './components/UserContext';
+import MovieList from './components/MovieList';
+import BottomPanel from './components/BottomPanel';
+import Title from './components/Title';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [userMovieList, setUserMovieList] = useState([]);
+	const [listType, setListType] = useState('Using State');
+	const [lastUpdated, setLastUpdated] = useState('Never');
+	return (
+		<div className="App">
+			<Title>Brad Pitt Movies</Title>
+			<UserContext.Provider
+				value={{
+					userMovieList,
+					setUserMovieList,
+					listType,
+					setListType,
+					lastUpdated,
+					setLastUpdated
+				}}
+			>
+				<MovieList />
+				<Title>Brad Pitt Movies to Watch</Title>
+				<BottomPanel />
+			</UserContext.Provider>
+		</div>
+	);
 }
 
 export default App;

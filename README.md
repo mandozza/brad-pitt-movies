@@ -1,3 +1,15 @@
+#Brad Pitt Movies
+
+In a effort to teach myself React and Reack hooks i decided to build a simple web app that will display movies that can then be added to a watch list.
+
+At first this will read the data locally , phase 2 will be to integrate with a api.
+
+phase 3 will be to add local storage.
+
+Phase 4 will be to add search capabilities and to allow the user to add any movie they wish.
+
+The hope is by building a real world app i can full grasp all the asspects of react.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
