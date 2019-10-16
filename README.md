@@ -4,13 +4,15 @@ In a effort to teach myself React and React hooks i decided to build a simple we
 
 ![Alt text](./public/images/screenshot.png?raw=true 'Brad Pitt Screenshot')
 
-At first this will read the data locally , phase 2 will be to integrate with a api.
+Phase 1: this will read the data locally
 
-phase 3 will be to add local storage.
+Phase 2: will be to integrate with a api.
 
-Phase 4 will be to add search capabilities and to allow the user to add any movie they wish.
+Phase 3: will be to add local storage.
 
-The hope is by building a real world app i can full grasp all the asspects of react.
+Phase 4: will be to add search capabilities and to allow the user to add any movie they wish.
+
+The hope is the by building a real world app i can full grasp all the aspects of react and improve my javascript skills.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
