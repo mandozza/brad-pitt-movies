@@ -1,6 +1,6 @@
 #Brad Pitt Movies
 
-In a effort to teach myself React and Reack hooks i decided to build a simple web app that will display movies that can then be added to a watch list.
+In a effort to teach myself React and React hooks i decided to build a simple web app that will display movies that can then be added to a watch list.
 
 At first this will read the data locally , phase 2 will be to integrate with a api.
 
