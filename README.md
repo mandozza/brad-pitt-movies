@@ -2,6 +2,8 @@
 
 In a effort to teach myself React and React hooks i decided to build a simple web app that will display movies that can then be added to a watch list.
 
+![Alt text](./public/images/screenshot.jpg?raw=true 'Brad Pitt Screenshot')
+
 At first this will read the data locally , phase 2 will be to integrate with a api.
 
 phase 3 will be to add local storage.
