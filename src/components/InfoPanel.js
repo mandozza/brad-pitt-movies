@@ -2,10 +2,9 @@ import React, { useContext } from 'react';
 import { UserContext } from './UserContext';
 import Button from './Button';
 
-export default function InfoPanel(props) {
+export default function InfoPanel({className}) {
 	const {
 		userMovieList,
-		setUserMovieList,
 		listType,
 		setListType,
 		lastUpdated,
@@ -27,18 +26,23 @@ export default function InfoPanel(props) {
 		setLastUpdated('now');
 	};
 
+	const btns = [{
+		cssname:"btn-save",
+		handleClick: localStorageClicked,
+		copy:"Save to Local Storage"
+	},
+	{
+		cssname:"btn-clear",
+		handleClick: deleteLocalStorage,
+		copy: "Delete Local Storage"
+	}]
+
+	const copy = [`${userMovieList.length} of movies to Watch`, `Using Local Storage:${listType}`, `Last updated:${lastUpdated}`]
 	return (
-		<div className={props.className}>
+		<div {...{className}}>
 			<h3>Info panel</h3>
-			<div>{userMovieList.length} of movies to Watch</div>
-			<div> Using Local Storage:{listType}</div>
-			<div>Last updated:{lastUpdated}</div>
-			<Button cssname="btn-save" handleClick={localStorageClicked}>
-				Save to Local Storage
-			</Button>
-			<Button cssname="btn-clear" handleClick={deleteLocalStorage}>
-				Delete Local Storage
-			</Button>
+			{copy.map((text, i)=><div key={i}>{text}</div>)}
+			{btns.map(({copy, ...rest}, i)=><Button key={i} {...rest}>{copy}</Button>)}
 		</div>
 	);
 }

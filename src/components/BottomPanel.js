@@ -1,12 +1,14 @@
-import React from 'react';
-import WatchList from './WatchList';
+import React, { useContext } from 'react';
+import MoveList from './MovieList';
 import InfoPanel from './InfoPanel';
+import { UserContext } from './UserContext';
 
-export default function BottomPanel() {
-	return (
+export default function BottomPanel(){
+	const { userMovieList: movies }  = useContext(UserContext);
+	return(
 		<div className="bottompanel">
-			<WatchList className="watchlist" />
+			<MoveList {...{movies}} className="watchlist" />
 			<InfoPanel className="infopanel" />
 		</div>
-	);
-}
+	)
+};
