@@ -4,10 +4,10 @@ import InfoPanel from './InfoPanel';
 import { UserContext } from './UserContext';
 
 export default function BottomPanel(){
-	const { userMovieList } = useContext(UserContext);
+	const { userMovieList: movies }  = useContext(UserContext);
 	return(
 		<div className="bottompanel">
-			<MoveList movies={userMovieList} className="watchlist" />
+			<MoveList {...{movies}} className="watchlist" />
 			<InfoPanel className="infopanel" />
 		</div>
 	)
