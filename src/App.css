@@ -28,7 +28,7 @@ html {
 .logo-container {
 	display: flex;
 	flex-direction: column;
-	flex-basis: 150px;
+	flex-basis: 20%;
 	padding: 0 50px;
 }
 .logo-title {
@@ -56,6 +56,28 @@ html {
 	margin-top: -10px;
 	width: 100%;
 	font-size: 16px;
+}
+
+.header-nav {
+	display: flex;
+	flex-direction: row;
+	height: inherit;
+	flex-basis: 80%;
+}
+
+.search {
+	display: flex;
+	flex-direction: row;
+	flex-basis: 80%;
+	color: #fff;
+	background-color: purple;
+	height: inherit;
+}
+
+.userpanel {
+	display: flex;
+	flex-direction: row;
+	flex-basis: 20%;
 }
 
 /* movies */

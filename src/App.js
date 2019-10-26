@@ -3,7 +3,7 @@ import { UserContext } from './components/UserContext';
 import MovieList from './components/MovieList';
 import HeaderPanel from './components/HeaderPanel';
 import SidePanel from './components/SidePanel';
-import Title from './components/Title';
+
 import './App.css';
 
 function App() {

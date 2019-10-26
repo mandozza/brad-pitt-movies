@@ -1,5 +1,8 @@
 import React from 'react';
 import Title from './Title';
+import Search from './Search';
+import UserPanel from './UserPanel';
+
 export default function HeaderPanel() {
 	return (
 		<div className="header-panel">
@@ -12,7 +15,10 @@ export default function HeaderPanel() {
 					<div className="tagline">Movie Manager</div>
 				</Title>
 			</div>
-			<div classname="header-nav">panel options go here</div>
+			<div classname="header-nav">
+				<Search />
+				<UserPanel />
+			</div>
 		</div>
 	);
 }
