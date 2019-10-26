@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
 .App,
 html {
 	text-align: center;
@@ -8,11 +10,52 @@ html {
 	color: #09d3ac;
 }
 
+/*header panel css */
+
 .maintitle {
-	padding: 20px 10px;
-	font-size: 36px;
-	font-weight: bold;
+	font-family: 'Righteous', cursive;
+	padding: 0px 10px;
+	font-size: 48px;
+	font-weight: 400;
 	color: #fff;
+}
+
+.header-panel {
+	display: flex;
+	flex-direction: row;
+	height: 80px;
+}
+.logo-container {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 150px;
+	padding: 0 50px;
+}
+.logo-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.ku,
+.jo {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.ku {
+	color: orangered;
+}
+
+.jo {
+	color: #09d3ac;
+}
+.tagline {
+	margin-top: -10px;
+	width: 100%;
+	font-size: 16px;
 }
 
 /* movies */

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { UserContext } from './components/UserContext';
 import MovieList from './components/MovieList';
-import BottomPanel from './components/BottomPanel';
+import HeaderPanel from './components/HeaderPanel';
+import SidePanel from './components/SidePanel';
 import Title from './components/Title';
 import './App.css';
 
@@ -11,7 +12,7 @@ function App() {
 	const [lastUpdated, setLastUpdated] = useState('Never');
 	return (
 		<div className="App">
-			<Title>Brad Pitt Movies</Title>
+			<HeaderPanel />
 			<UserContext.Provider
 				value={{
 					userMovieList,
@@ -23,8 +24,7 @@ function App() {
 				}}
 			>
 				<MovieList />
-				<Title>Brad Pitt Movies to Watch</Title>
-				<BottomPanel />
+				<SidePanel />
 			</UserContext.Provider>
 		</div>
 	);

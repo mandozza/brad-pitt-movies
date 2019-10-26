@@ -1,8 +1,10 @@
-#Brad Pitt Movies
+#KuJo Movie Manager ( changed because a complaint by someone representing Brad Pitt)
+
+Apparently it hurts his brand using his name to learn react ..... who knew!
 
 In a effort to teach myself React and React hooks i decided to build a simple web app that will display movies that can then be added to a watch list.
 
-![Alt text](./public/images/screenshot.png?raw=true 'Brad Pitt Screenshot')
+![Alt text](./public/images/screenshot.png?raw=true 'Kujo Screenshot')
 
 Phase 1: this will read the data locally
 
