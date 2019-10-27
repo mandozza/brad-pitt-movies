@@ -15,7 +15,7 @@ export default function HeaderPanel() {
 					<div className="tagline">Movie Manager</div>
 				</Title>
 			</div>
-			<div classname="header-nav">
+			<div className="header-nav">
 				<Search />
 				<UserPanel />
 			</div>

@@ -28,8 +28,8 @@ html {
 .logo-container {
 	display: flex;
 	flex-direction: column;
-	flex-basis: 20%;
-	padding: 0 50px;
+	flex-basis: 15%;
+	padding: 0 0 0 50px;
 }
 .logo-title {
 	display: flex;
@@ -65,13 +65,28 @@ html {
 	flex-basis: 80%;
 }
 
-.search {
+.search-panel {
 	display: flex;
 	flex-direction: row;
 	flex-basis: 80%;
+	align-items: center;
+	justify-content: center;
 	color: #fff;
-	background-color: purple;
 	height: inherit;
+}
+
+.search-icon {
+	height: 60px;
+	width: 60px;
+}
+
+.search-input {
+	height: 30px;
+	width: 90%;
+	border-radius: 6px;
+	margin: 0px 10px;
+	padding: 0 10px;
+	font-size: 16px;
 }
 
 .userpanel {
