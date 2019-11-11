@@ -1,0 +1,133 @@
+/* @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap'); */
+
+.App,
+html {
+	text-align: center;
+	background-color: #282c34;
+}
+
+.App-link {
+	color: #09d3ac;
+}
+
+/*header panel css */
+
+.maintitle {
+	font-family: 'Righteous', cursive;
+	padding: 0px 10px;
+	font-size: 48px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.header-panel {
+	display: flex;
+	flex-direction: row;
+	height: 80px;
+}
+.logo-container {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 15%;
+	padding: 0 0 0 50px;
+}
+.logo-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.ku,
+.jo {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.ku {
+	color: orangered;
+}
+
+.jo {
+	color: #09d3ac;
+}
+.tagline {
+	margin-top: -10px;
+	width: 100%;
+	font-size: 16px;
+}
+
+.header-nav {
+	display: flex;
+	flex-direction: row;
+	height: inherit;
+	flex-basis: 80%;
+}
+
+
+/*user panel*/
+
+.user-panel {
+	display: flex;
+	flex-direction: row;
+	flex-basis: 20%;
+	justify-content: center;
+	align-items: center;
+}
+
+.film-icon {
+	width: 80px;
+	height: 80px;
+}
+
+.moviecard h1 {
+	word-wrap: normal;
+	font-size: 16px;
+}
+
+.moviecard img {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* Bottom Panel */
+.bottompanel {
+	display: flex;
+	flex-direction: row;
+	background-color: #000;
+	color: orangered;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	min-height: 300px;
+}
+
+.watchlist {
+	background-color: teal;
+	display: flex;
+	flex-direction: row;
+	flex-basis: 75%;
+}
+
+.infopanel {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 25%;
+	background-color: #ccc;
+	color: #000;
+	padding: 10px;
+}
+
+.right-panel {
+	display: flex;
+	flex-direction: row;
+	background-color: #000;
+	color: orangered;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	min-height: 300px;
+}
