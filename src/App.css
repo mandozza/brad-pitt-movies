@@ -81,16 +81,6 @@ html {
 	height: 80px;
 }
 
-.moviecard h1 {
-	word-wrap: normal;
-	font-size: 16px;
-}
-
-.moviecard img {
-	max-width: 200px;
-	max-height: 200px;
-}
-
 li {
 	list-style-type: none;
 }
