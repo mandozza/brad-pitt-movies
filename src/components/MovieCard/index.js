@@ -12,13 +12,15 @@ const MovieCardPanel = styled.div`
   border-radius: 10px;
   box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.28);
   margin: 10px;
-  padding: 10px 10px;
+  padding: 10px 0px;
   width: 180px;
 `
 
 const MovieCardTitle = styled.h3`
+  Font-Family: 'Lora', Serif;
   word-wrap: normal;
   font-size: 16px;
+  padding: 5px 10px;
 `
 
 const MovieCardImage = styled.img`

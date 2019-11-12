@@ -34,6 +34,7 @@ const Btns = {
     btnStyles: {
       backgroundColor: 'orangered',
       color: '#fff',
+      FontFamily: "'Lora', Serif",
       fontSize: '12px',
       fontWeight: 'bold',
       padding: '10px 20px',

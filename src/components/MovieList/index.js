@@ -1,5 +1,18 @@
 import React, { useState, useEffect } from "react";
-import MovieCard from "./MovieCard";
+import styled from 'styled-components'
+import MovieCard from "../MovieCard";
+
+const MovieListPanel = styled.div`
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+	background-color: teal;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+`
+
 
 const MovieList = () => {
   useEffect(() => {
@@ -19,7 +32,7 @@ const MovieList = () => {
   console.log("movies");
   console.log(movies);
   return (
-    <div className="moviecards">
+    <MovieListPanel>
       {movies.map(movie => (
         <MovieCard
           key={movie.id}
@@ -29,7 +42,7 @@ const MovieList = () => {
           movieStatus={movie.release_date}
         />
       ))}
-    </div>
+    </MovieListPanel>
   );
 };
 
